@@ -1,13 +1,14 @@
+"use client"
 import Link from "next/link"
 
-function MainNavbar() {
+function mainNavbar() {
   return (
     <div>
-      <ul className="flex flex-row">
-        <li className="mx-3">
-          <Link href={"/"}>Home</Link>
+      <ul className="flex mx-3">
+        <li className="mr-2">
+          <Link href={"/"}>Accueil</Link>
         </li>
-        <li>
+        <li className="mr-2">
           <Link href={"/dashboard"}>Dashboard</Link>
         </li>
       </ul>
@@ -15,4 +16,4 @@ function MainNavbar() {
   )
 }
 
-export default MainNavbar
+export default mainNavbar
