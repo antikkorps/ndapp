@@ -3,16 +3,21 @@ import Link from "next/link"
 
 function mainNavbar() {
   return (
-    <div>
-      <ul className="flex mx-3">
-        <li className="mr-2">
-          <Link href={"/"}>Accueil</Link>
-        </li>
-        <li className="mr-2">
-          <Link href={"/dashboard"}>Dashboard</Link>
-        </li>
-      </ul>
-    </div>
+    <>
+      <div className="container flex justify-around">
+        <div className="bg-purple-600 flex mx-3 px-4 py-5 justify-center">logo</div>
+        <div className="bg-purple-600 ">
+          <ul className="flex mx-3 py-5 justify-around">
+            <li className="px-3">
+              <Link href={"/"}>Accueil</Link>
+            </li>
+            <li className="px-3">
+              <Link href={"/dashboard"}>Dashboard</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
   )
 }
 
