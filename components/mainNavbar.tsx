@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import { ModeToggle } from "./modeToggle"
 
 function mainNavbar() {
   return (
@@ -15,6 +16,9 @@ function mainNavbar() {
               <Link href={"/dashboard"}>Dashboard</Link>
             </li>
           </ul>
+        </div>
+        <div className="flex mx-3 px-4 py-4 justify-center">
+          <ModeToggle />
         </div>
       </div>
     </>
