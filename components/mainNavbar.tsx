@@ -1,6 +1,8 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
+
 import { ModeToggle } from "./modeToggle"
 import NDLogo from "@/public/images/logo/ND_Logo.svg"
 
@@ -24,7 +26,14 @@ function mainNavbar() {
           </ul>
         </div>
         <div className="flex mx-3 px-4 py-4 justify-center">
-          <ModeToggle />
+          <div className="mr-2">
+            <ModeToggle />
+          </div>
+          <div>
+            <Button asChild>
+              <Link href="/login">Login</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </>
